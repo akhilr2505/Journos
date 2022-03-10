@@ -150,7 +150,7 @@ function Note({ deleteNote, editNote, note }) {
   const handleEdit = () => editNote(note);
 
   return (
-    <div className="card p-3 m-3   box-shadow">
+    <div className="card box-shadow">
       <div className="card-header">
         <h5 className="card-title">{title}</h5>
       </div>
