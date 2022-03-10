@@ -1,0 +1,19 @@
+.notes {
+    width: 100vh;
+    height: 100vh;
+}
+
+.logoutButton {
+    display: absolute;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.userDetails {
+    display: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+    font-size: medium;
+    z-index: 2;
+}

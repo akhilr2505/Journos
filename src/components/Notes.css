@@ -1,0 +1,30 @@
+.App {
+    background-color: #d3d3d3;
+    font-family: sans-serif;
+    /* text-align: center; */
+  }
+
+.notes {
+    width: 100vh;
+}
+
+  h1 {
+    text-align: center;
+  }
+  .left-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100vh;
+  }
+  .box-shadow {
+    box-shadow: 10px 5px 5px #d3d3d3;
+  }
+  
+  .notesMainDiv {
+      width: 100vh;
+  }
+
+  .journal {
+      display: flex;
+      flex-direction: row;
+  }
