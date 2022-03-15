@@ -17,8 +17,8 @@ const Home = () => {
     }
   };
   return (
-    <>
-      <div className="userDetails">{user.email}</div>
+    <div className="home">
+      <div className="userDetails">Username: {user.email}</div>
       {console.log(user.email)}
       <div className="logoutButton">
         <Button variant="primary" onClick={handleLogout}>
@@ -28,7 +28,7 @@ const Home = () => {
       <div className="notes">
         <Notes />
       </div>
-    </>
+    </div>
   );
 };
 

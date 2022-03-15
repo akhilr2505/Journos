@@ -9,9 +9,9 @@ import { UserAuthContextProvider } from "./context/UserAuthContext";
 
 function App() {
   return (
-    <Container>
-      <Row>
-        <Col>
+    <div>
+      <div>
+        <div>
           <UserAuthContextProvider>
             <Routes>
               <Route
@@ -26,9 +26,9 @@ function App() {
               <Route path="/signup" element={<Signup />} />
             </Routes>
           </UserAuthContextProvider>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 

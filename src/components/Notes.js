@@ -103,9 +103,9 @@ class Notes extends Component {
 
     return (
       <div className="notes">
-        <div className="mainNotesDiv">
-          <h1>React Notes App</h1>
+        <h1 className="title">Journos</h1>
 
+        <div className="mainNotesDiv">
           {/* Search Start */}
           {this.state.searchData.map((v, i) => (
             <a href={`https://www.${v.domain}`} target="_blank">
@@ -150,21 +150,23 @@ function Note({ deleteNote, editNote, note }) {
   const handleEdit = () => editNote(note);
 
   return (
-    <div className="card box-shadow">
-      <div className="card-header">
-        <h5 className="card-title">{title}</h5>
-      </div>
-      <div className="card-body">
-        <p className="card-text">{content}</p>
-      </div>
-      <div className="card-footer text-muted">
-        <button className="btn btn-default float-none" onClick={handleEdit}>
-          <i className="fa fa-edit" />
-        </button>
+    <div className="outerCardDiv">
+      <div className="cardDiv">
+        <div className="">
+          <h5 className="cardTitle">{title}</h5>
+        </div>
+        <div className="cardBody">
+          <p className="cardText">{content}</p>
+        </div>
+        <div className="cardFooter">
+          <button className="editButton" onClick={handleEdit}>
+            <i className="fa fa-edit" />
+          </button>
 
-        <button className="btn btn-danger float-none" onClick={handleDelete}>
-          <i className="fa fa-trash" />
-        </button>
+          <button className="deleteButton" onClick={handleDelete}>
+            <i className="fa fa-trash" />
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -194,39 +196,33 @@ class NoteForm extends Component {
     const { title, content } = this.state;
 
     return (
-      <div className="p-3 m-3 jumbotron ">
+      <div className="journalForm">
         <form onSubmit={this.handleSubmit}>
-          <div className="form-group row">
-            <label className=" font-weight-bold col-sm-2 col-form-label">
-              Title
-            </label>
+          <div className="journalTitle">
+            <label className="journalTitleLabel">Title</label>
             <input
               type="text"
               name="title"
-              className="form-control m-2"
-              placeholder="Enter Note Title"
+              className="journalTitleInput"
+              placeholder="Enter journal entry title"
               value={title}
               onChange={this.handleInput}
               required
             />
           </div>
-          <div className="form-group row">
-            <label className="font-weight-bold col-sm-2 col-form-label">
-              Content
-            </label>
+          <div className="journalContent">
+            <label className="journalContentLabel">Content</label>
             <textarea
-              className="form-control m-2"
+              className="journalContentInput"
               name="content"
               rows="3"
-              placeholder="Enter Note Content"
+              placeholder="Enter journal entry..."
               value={content}
               onChange={this.handleInput}
               required
             />
           </div>
-          <button className=" font-weight-bold btn btn-outline-primary form-group row m-4">
-            Save Note
-          </button>
+          <button className="saveButton">Save Note</button>
         </form>
       </div>
     );
