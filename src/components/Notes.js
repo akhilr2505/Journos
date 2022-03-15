@@ -107,16 +107,15 @@ class Notes extends Component {
 
         <div className="mainNotesDiv">
           {/* Search Start */}
-          {this.state.searchData.map((v, i) => (
+          {/*this.state.searchData.map((v, i) => (
             <a href={`https://www.${v.domain}`} target="_blank">
-              {/* <pre>{`https://www.${v.domain}`}</pre> */}
+               <pre>{`https://www.${v.domain}`}</pre> 
               <img src={v.logo} />
             </a>
-          ))}
-          <br />
-          <input type="text" onChange={this.handleSearch} />
+          ))*/}
+          {/* <input type="text" onChange={this.handleSearch} /> */}
           {/* search end */}
-          <pre>{JSON.stringify(this.state.searchData, null, 2)}</pre>
+          {/* <pre>{JSON.stringify(this.state.searchData, null, 2)}</pre> */}
           <div className="journal">
             <div className="leftPanel">
               {notes.map((note, id) => (

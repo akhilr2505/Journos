@@ -15,18 +15,18 @@
 }
 
 .logoutButton {
-    padding-left: p;
-    width: 100vw;
     padding-left: 90vw;
+    position: absolute;
+    margin-bottom: 95%;
 }
 
 .userDetails {
-    display: absolute;
-    margin-top: 20px;
-    margin-right: 70vw;
+    position: absolute;
+    margin-bottom: 95%;
+    margin-right: 75vw;
+    font-weight: 600;
+    font-size: larger;
     color: black;
-    font-size: medium;
-    z-index: 2;
 }
 
 .g-btn {
