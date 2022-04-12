@@ -1,0 +1,56 @@
+    .journalForm {
+    width: 100%;
+    }
+
+  .journal {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .journalTitle {
+    font-size: 40px;
+  }
+
+  .journalTitleLabel {
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+
+  .journalTitleInput {
+    font-size: 25px;
+    border: solid 2px;
+    border-radius: 6px;
+    width: 48vw;
+  }
+
+  .journalContent {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .journalContentLabel {
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+
+  .journalContentInput {
+    font-size: 25px;
+    border: solid 2px;
+    width: 48vw;
+    height: 33vh;
+    border-radius: 6px;
+  }
+
+  .saveButton {
+    background-color: black;
+    border-radius: 7px;
+    border: none;
+    height: 35px;
+    color: white;
+    padding: 5px;  
+    margin-top: 30px; 
+  }

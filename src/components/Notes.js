@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./Notes.css";
+import {Button} from 'react-bootstrap';
+
 const bingOptions = {
   method: "GET",
   url: "https://bing-web-search1.p.rapidapi.com/search",
@@ -158,13 +160,13 @@ function Note({ deleteNote, editNote, note }) {
           <p className="cardText">{content}</p>
         </div>
         <div className="cardFooter">
-          <button className="editButton" onClick={handleEdit}>
-            <i className="fa fa-edit" />
-          </button>
+          <Button className="editButton" variant="primary" size="sm" onClick={handleEdit}>
+            Edit
+          </Button>
 
-          <button className="deleteButton" onClick={handleDelete}>
-            <i className="fa fa-trash" />
-          </button>
+          <Button className="deleteButton" variant="danger" size="sm" onClick={handleDelete}>
+            Delete
+          </Button>
         </div>
       </div>
     </div>

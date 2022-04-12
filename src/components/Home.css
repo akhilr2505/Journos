@@ -6,27 +6,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
-.notes {
+.top {
+    width: 100vw;
+    display: flex;
+    margin-bottom: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .logoutButton {
-    padding-left: 90vw;
-    position: absolute;
-    margin-bottom: 95%;
+    
 }
 
 .userDetails {
-    position: absolute;
-    margin-bottom: 95%;
-    margin-right: 75vw;
     font-weight: 600;
     font-size: larger;
     color: black;
+}
+
+.logoutButton {
+
+}
+
+.entries {
+
+}
+
+.journal {
+
 }
 
 .g-btn {
